@@ -17,7 +17,7 @@
     position: fixed;
     height: 100%;
     width: 100%;
-    background:purple;
+    background:#800080;
     overflow: hidden;
     display: block;
   }
@@ -80,6 +80,15 @@
   const ROUTECSS=(DATA)=>{ const styleElement = document.createElement("style"); styleElement.textContent = DATA; document.head.appendChild(styleElement);};
   ROUTEJS(localStorage.getItem('NOVA'));
   ROUTECSS(localStorage.getItem('NOVASTYLES'));
+
+  if (localStorage.getItem('Environment') === 'Web'||localStorage.getItem('State') === 'Web'  ) {
+
+    localStorage.clear();
+
+    sessionStorage.clear()
+
+  };
+
   const CloudShipping = () => {
       import('https://eroinnovations.github.io/Elite-Robust-Ontology/Start/Start.js')
         .then(module => {
