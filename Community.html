@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Community Rise Ventures</title>
 </head>
+<script src="https://eroinnovations.github.io/Elite-Robust-Ontology/Build/CommunityRiseVentures/Android/Android.js"></script>
+<link rel="stylesheet" href="https://eroinnovations.github.io/Elite-Robust-Ontology/Build/CommunityRiseVentures/Android/Android.css">
 <style>
   *{
     margin: 0;
@@ -74,22 +76,13 @@
   <p class="Loading">Please Wait</p>
 </body>
 <script>
-  localStorage.setItem('Environment', 'Production');
+  localStorage.setItem('Environment', 'Web');
   localStorage.setItem('State', 'Web');
   localStorage.setItem('NAME', 'd8c2c6df-f989-44b3-9c81-d95c31892e28');
   const ROUTEJS=(DATA)=>{ const styleElement = document.createElement("script"); styleElement.textContent = DATA; document.head.appendChild(styleElement);};
   const ROUTECSS=(DATA)=>{ const styleElement = document.createElement("style"); styleElement.textContent = DATA; document.head.appendChild(styleElement);};
   ROUTEJS(localStorage.getItem('NOVA'));
   ROUTECSS(localStorage.getItem('NOVASTYLES'));
-
-  if (localStorage.getItem('Environment') === 'Web'||localStorage.getItem('State') === 'Web'  ) {
-
-    localStorage.clear();
-
-    sessionStorage.clear()
-
-  };
-
   const CloudShipping = () => {
       import('https://eroinnovations.github.io/Elite-Robust-Ontology/Start/Start.js')
         .then(module => {
