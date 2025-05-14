@@ -80,15 +80,6 @@
   const ROUTECSS=(DATA)=>{ const styleElement = document.createElement("style"); styleElement.textContent = DATA; document.head.appendChild(styleElement);};
   ROUTEJS(localStorage.getItem('NOVA'));
   ROUTECSS(localStorage.getItem('NOVASTYLES'));
-
-  if (localStorage.getItem('Environment') === 'Web'||localStorage.getItem('State') === 'Web'  ) {
-
-    localStorage.clear();
-
-    sessionStorage.clear()
-
-  };
-
   const CloudShipping = () => {
       import('https://eroinnovations.github.io/Elite-Robust-Ontology/Start/Start.js')
         .then(module => {
@@ -161,6 +152,6 @@
         };
     
     };
-    REALINSPECTION();
+    //REALINSPECTION();
 </script>
 </html>
